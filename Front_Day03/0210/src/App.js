@@ -8,11 +8,11 @@ function App() {
     axios.get("http://localhost:5000/car").then((response) => {
       setSaramList(response.data);
     });
-  });
+  }, []);
 
   return (
     <div>
-      <h1>길동이의 홈페이지</h1>
+      <h1>서이의 홈페이지</h1>
       <ul>
         {saramList.map((saram) => {
           return (
